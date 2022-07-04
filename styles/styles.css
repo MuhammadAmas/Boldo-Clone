@@ -1,13 +1,28 @@
+:root {
+    --darkBlue: #0A2640;
+}
 
-
-html{
+html {
     margin: 0 auto;
     max-width: 1200px;
 }
 
-a{
+body {
+    color: var(--darkBlue);
+    font-family: 'Manrope', sans-serif;
+}
+section{
+    margin: 4em auto;
+}
+
+a {
     text-decoration: none;
 }
+h1{
+    font-size: 3rem;
+    margin: 0;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -15,7 +30,7 @@ a{
     align-items: center;
 }
 
- .logo {
+.logo {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,18 +47,44 @@ a{
     width: 40%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.first-section-items{
+.login-btn {
+    border-radius: 24px;
+    padding: 8px 40px;
+    border: 1.5px solid var(--darkBlue);
+}
+
+.first-section-items {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.first-section-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.first-section-buttons{
+    margin-top:2em;
+}
+.first-section-buttons a{
+    border-radius: 24px;
+    padding: 8px 40px;
+    border: 1.5px solid var(--darkBlue);
+    color: var(--dark);
+}
+.first-section-buttons .btn1{
+    background-color: var(--darkBlue);
+    color: white;
+}
 
+.first-section-frames {
+    margin: 3em auto;
 }
-.first-section-frames{
-    
-}
-.first-section-logo{
+
+.first-section-logo {
     display: flex;
     flex-direction: row;
     align-items: center;
